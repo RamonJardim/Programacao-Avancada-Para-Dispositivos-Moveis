@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">BTUCalculator</string>
+    <string name="area">Área do ambiente</string>
+    <string name="numero_pessoas">Número de pessoas no ambiente</string>
+    <string name="incidencia_solar">Há incidência de luz solar direta no ambiente?</string>
+</resources>
