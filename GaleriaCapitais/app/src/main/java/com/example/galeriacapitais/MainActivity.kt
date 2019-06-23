@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
     private fun bindGridHandler() {
         gridView = findViewById(R.id.galeriaGridView)
         gridView.onItemClickListener = AdapterView.OnItemClickListener {
-                adapterView, view, i, l ->
+                _, view, _, _ ->
             val wikiLink: Uri = Uri.parse("http://www.wikipedia.com/wiki/${view.tag as String}")
             val browserIntent = Intent(Intent.ACTION_VIEW, wikiLink)
             startActivity(browserIntent)
