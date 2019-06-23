@@ -23,10 +23,9 @@ class MainActivity : AppCompatActivity() {
         gridView = findViewById(R.id.galeriaGridView)
         gridView.onItemClickListener = AdapterView.OnItemClickListener {
                 adapterView, view, i, l ->
-            val city = "${view.tag as String}, Brazil".replace(' ', '+')
-            val geoIntent: Intent
-               geoIntent = Intent(Intent.ACTION_VIEW, Uri.parse("geo:0,0?q=$city"))
-            startActivity(geoIntent)
+            val wikiLink: Uri = Uri.parse("http://www.wikipedia.com/wiki/${view.tag as String}")
+            val browserIntent = Intent(Intent.ACTION_VIEW, wikiLink)
+            startActivity(browserIntent)
         }
     }
 
